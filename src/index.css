@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Playfair+Display:wght@600;700&family=Poppins:wght@400&family=Inter:wght@400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #A67C52; /* Doré / Sable */
+  --color-secondary: #156F4B; /* Vert Touba */
+  --color-text-primary: #2E2E2E; /* Noir doux */
+  --color-text-secondary: #6B6B6B; /* Gris chaud */
+  --color-background-light: #FDFCF8; /* Beige clair */
+  --color-accent: #E2C044; /* Jaune clair / Lumière */
+  --color-background-dark: #1E1E1E; /* Noir brun */
+  --color-error: #C0392B; /* Rouge doux */
+}
+
+body {
+  font-family: 'Poppins', 'Inter', sans-serif;
+  background-color: var(--color-background-light);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--color-text-primary);
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.25rem; /* text-4xl */
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem; /* md:text-5xl */
+  }
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.5rem; /* text-2xl */
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 1.875rem; /* md:text-3xl */
+  }
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.25rem; /* text-xl */
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 1.5rem; /* md:text-2xl */
+  }
+}
+
+p, span, li, a, input, button {
+  font-family: 'Poppins', 'Inter', sans-serif;
+  color: #444444;
+  font-weight: 400;
+  font-size: 0.875rem; /* text-sm */
+}
+
+@media (min-width: 768px) {
+  p, span, li, a, input, button {
+    font-size: 1rem; /* md:text-base */
+  }
+}
+
+.religious-text {
+  font-family: 'Amiri', serif;
+  color: var(--color-secondary);
+  font-style: italic;
+  font-size: 1.125rem; /* text-lg */
+  text-align: center;
+}
+
+.section {
+  margin-top: 1.5rem; /* my-6 */
+  margin-bottom: 1.5rem;
+  padding-left: 1rem; /* px-4 */
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .section {
+    margin-top: 3rem; /* md:my-12 */
+    margin-bottom: 3rem;
+    padding-left: 3rem; /* md:px-12 */
+    padding-right: 3rem;
+  }
+}
+
+.rounded-soft {
+  border-radius: 1rem; /* rounded-2xl */
+}
+
+.shadow-light {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.shadow-light:hover {
+  box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+}
+
+.transition-smooth {
+  transition: all 0.3s ease-in-out;
+}
